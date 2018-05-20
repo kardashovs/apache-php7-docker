@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Alpine microcontainer with apache and php7
 
 This is a micro docker container [![](https://images.microbadger.com/badges/image/nimmis/apache.svg)](https://microbadger.com/images/nimmis/apache "Get your own image badge on microbadger.com") based on Alpine 3.5, Apache 2.2 and php 7
@@ -42,3 +43,7 @@ so to access the apache server on port 8080 you should use the command
 
 	docker run -d --name apache-php7 -p 8080:80  nimmis/alpine-apache-php7
 
+=======
+# apache-php7-docker
+This is repository have alpine3.7 of base &amp; apache &amp; php7 on docker-compose
+>>>>>>> ef1af9cc7109757c0651ebabf622dd8b9c6aeb43
