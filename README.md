@@ -1,16 +1,16 @@
 <<<<<<< HEAD
 ## Alpine microcontainer with apache and php7
 
-This is a micro docker container [![](https://images.microbadger.com/badges/image/nimmis/apache.svg)](https://microbadger.com/images/nimmis/apache "Get your own image badge on microbadger.com") based on Alpine 3.5, Apache 2.2 and php 7
+This is a micro docker container [![](https://images.microbadger.com/badges/image/krosh961/apache-php7-docker.svg)](https://microbadger.com/images/krosh961/apache-php7-docker "Get your own image badge on microbadger.com") based on Alpine 3.7, Apache 2.4 and php7
 
 ### Examples
 
-This images are build on nimmis/alpine-micro [![](https://images.microbadger.com/badges/image/nimmis/alpine-micro.svg)](https://microbadger.com/images/nimmis/alpine-micro "Get your own image badge on microbadger.com")which are a modified version of Alpine with a working init process, and a working cron, logrotate  and syslog. Services are started with runit daemon, for more information about that see [nimmis/alpine-mico](https://registry.hub.docker.com/u/nimmis/alpine-micro/)
+This images are build on nimmis/alpine-micro [![](https://images.microbadger.com/badges/image/krosh961/alpine3.7-docker.svg)](https://microbadger.com/images/krosh961/alpine3.7-docker "Get your own image badge on microbadger.com") which are a modified version of Alpine with a working init process, and a working cron, logrotate  and syslog. Services are started with runit daemon, for more information about that see [krosh961/alpine3.7-docker](https://hub.docker.com/r/krosh961/alpine3.7-docker/)
 
 
 #### starting the container as a daemon
 
-	docker run -d --name apache-php7 nimmis/alpine-apache-php7
+	docker run -d --name apache-php7 krosh961/apache-php7-docker
 
 This will start the container with apache process runnung, access the container with
 
@@ -29,7 +29,7 @@ The images exposes a volume at /web. The structure below /web is
 
 To use this start the container with
 
-	docker run -d --name apache-php7 -v /path/to/web:/web nimmis/alpine-apache-php7
+	docker run -d --name apache-php7 -v /path/to/web:/web krosh961/apache-php7-docker
 
 if the folders are missing they will be created
 
@@ -41,9 +41,6 @@ To access the webserver from external you use the -P command where the syntax is
 
 so to access the apache server on port 8080 you should use the command
 
-	docker run -d --name apache-php7 -p 8080:80  nimmis/alpine-apache-php7
+	docker run -d --name apache-php7 -p 8080:80  krosh961/apache-php7-docker
 
 =======
-# apache-php7-docker
-This is repository have alpine3.7 of base &amp; apache &amp; php7 on docker-compose
->>>>>>> ef1af9cc7109757c0651ebabf622dd8b9c6aeb43
