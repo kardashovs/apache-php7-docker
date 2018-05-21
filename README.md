@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## Alpine microcontainer with apache and php7
 
 This is a micro docker container [![](https://images.microbadger.com/badges/image/krosh961/apache-php7-docker.svg)](https://microbadger.com/images/krosh961/apache-php7-docker "Get your own image badge on microbadger.com") based on Alpine 3.7, Apache 2.4 and php7
