@@ -22,6 +22,7 @@ RUN  apk update && apk upgrade && \
     apk add php7-bz2 php7-calendar php7-dom php7-gettext php7-imap php7-exif && \
     apk add php7-iconv php7-session php7-shmop php7-sockets php7-xml php7-xmlreader php7-xmlrpc && \
     apk add php7-zip php7-zlib && \
+    apk add php7-fileinfo php7-tokenizer php7-xmlwriter && \
     # install composer
     cd /tmp && curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer && \
     #clear cache
